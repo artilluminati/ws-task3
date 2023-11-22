@@ -1,0 +1,43 @@
+/*CSS RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+}	
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-line{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 5s linear forwards, filling 5s ease-in-out forwards;
+    font-size: 64px;
+}
+
+.text-line text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+@keyframes filling {
+    0%, 80%{
+        fill: #ffffff;
+        fill-opacity: 0;
+    }
+    100%{
+        fill: #000000;
+        fill-opacity: 1;
+    }
+}

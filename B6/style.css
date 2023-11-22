@@ -1,0 +1,44 @@
+/*CSS RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*PUT YOUR CSS CODE HERE*/
+
+@keyframes transform {
+	0% {
+	  transform: rotate(0deg) scale(1);
+	  clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+	  background-color: rgba(16, 31, 238, 1);
+	}
+	50% {
+	  transform: rotate(180deg) scale(1.5);
+	  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	  background-color: rgb(238, 223, 16);
+	}
+	100% {
+	  transform: rotate(360deg) scale(1);
+	  clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+	  background-color: rgba(16, 31, 238, 1);
+	}
+  }
+
+  body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #block {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+	animation: transform 2s infinite;
+  }
+  

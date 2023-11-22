@@ -1,0 +1,56 @@
+/*CSS RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+}	
+
+@keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .block-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .block {
+    background-image: url('image.jpg');
+    background-size: 600% 400%;
+    position: relative;
+    opacity: 0;
+    /* animation: disappear 2s; */
+  }
+  
+.x1{
+    background-position-y: 16.6666666667%;
+}
+.x2{
+    background-position-y: calc(16.6666666667% + 33%);
+}
+.x3{
+    background-position-y: calc(16.6666666667% + 66%);
+}
+.y1{
+    background-position-x: 10%;
+}
+.y2{
+    background-position-x: 30%;
+}
+.y3{
+    background-position-x: 50%;
+}
+.y4{
+    background-position-x: 70%;
+}
+.y5{
+    background-position-x: 90%;
+}

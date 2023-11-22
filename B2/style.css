@@ -1,0 +1,140 @@
+/*CSS RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+}	
+
+/* grid */
+
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    min-height: 100vh;
+    
+ }
+   
+ #site-title {
+ 
+    background-color: #959886; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    
+ }
+ #nav-1 {
+ 
+    background-color: #9A5CF9; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #nav-2 {
+ 
+    background-color: #E5BB9B; 
+    grid-row-start: 1;
+    grid-column-start: 5;
+ 
+    grid-row-end: 2;
+    grid-column-end: 6;
+    
+ }
+ #nav-3 {
+ 
+    background-color: #D75DC9; 
+    grid-row-start: 1;
+    grid-column-start: 6;
+ 
+    grid-row-end: 2;
+    grid-column-end: 7;
+    
+ }
+ #side-bar {
+ 
+    background-color: #75CA7D; 
+    grid-row-start: 2;
+    grid-column-start: 6;
+ 
+    grid-row-end: 4;
+    grid-column-end: 7;
+    
+ }
+ #Post Title {
+ 
+    background-color: #D777BD; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 6;
+    
+ }
+ #main-content {
+ 
+    background-color: #FC6CF9; 
+    grid-row-start: 3;
+    grid-column-start: 2;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+ #post-meta {
+ 
+    background-color: #9579DD; 
+    grid-row-start: 3;
+    grid-column-start: 1;
+ 
+    grid-row-end: 8;
+    grid-column-end: 2;
+    
+ }
+ #main-content-img {
+ 
+    background-color: #DD7B68; 
+    grid-row-start: 5;
+    grid-column-start: 2;
+ 
+    grid-row-end: 8;
+    grid-column-end: 6;
+    
+ }
+ #ads {
+ 
+    background-color: #5EE6BD; 
+    grid-row-start: 4;
+    grid-column-start: 6;
+ 
+    grid-row-end: 6;
+    grid-column-end: 7;
+    
+ }
+ #other-stuffs {
+ 
+    background-color: #EE5E9E; 
+    grid-row-start: 6;
+    grid-column-start: 6;
+ 
+    grid-row-end: 8;
+    grid-column-end: 7;
+    
+ }
+ #footer {
+ 
+    background-color: #BF8AB8; 
+    grid-row-start: 8;
+    grid-column-start: 1;
+ 
+    grid-row-end: 9;
+    grid-column-end: 7;
+    
+ }

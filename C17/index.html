@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block-container">
+        <div class="block x1 y1"></div>
+        <div class="block x1 y2"></div>
+        <div class="block x1 y3"></div>
+        <div class="block x1 y4"></div>
+        <div class="block x1 y5"></div>
+        <div class="block x2 y1"></div>
+        <div class="block x2 y2"></div>
+        <div class="block x2 y3"></div>
+        <div class="block x2 y4"></div>
+        <div class="block x2 y5"></div>
+        <div class="block x3 y1"></div>
+        <div class="block x3 y2"></div>
+        <div class="block x3 y3"></div>
+        <div class="block x3 y4"></div>
+        <div class="block x3 y5"></div>
+      </div>
+
+      <script>
+        cards = document.getElementsByClassName("block");
+        for (const card of cards){
+            // console.log(card);
+            card.style.animation = "disappear "+2*Math.random()+"s";
+            // card.style.display = 'none';
+        }
+      </script>
+</body>
+</html>
